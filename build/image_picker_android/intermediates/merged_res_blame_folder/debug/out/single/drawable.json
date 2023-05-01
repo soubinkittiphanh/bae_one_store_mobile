@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/efbf645ac7f7a6288f6f3f3011a758fb/core-1.8.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/efbf645ac7f7a6288f6f3f3011a758fb/core-1.8.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/efbf645ac7f7a6288f6f3f3011a758fb/core-1.8.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/efbf645ac7f7a6288f6f3f3011a758fb/core-1.8.0/res/drawable/notification_bg.xml"
+    }
+]

@@ -1,0 +1,409 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.jfill.onestore"
+4    android:versionCode="9"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:43:7-70
+11-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:43:24-67
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:44:3-72
+12-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:44:20-69
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:45:3-78
+13-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:45:20-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:46:5-66
+14-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:46:22-64
+15    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+15-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:47:5-75
+15-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:47:22-73
+16
+17    <queries>
+17-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:49:11-70:21
+18
+19        <!-- If your app opens https URLs -->
+20        <intent>
+20-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:51:13-54:22
+21            <action android:name="android.intent.action.VIEW" />
+21-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:52:15-67
+21-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:52:23-64
+22
+23            <data android:scheme="https" />
+23-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:53:15-46
+23-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:53:21-43
+24        </intent>
+25        <!-- If your app makes calls -->
+26        <intent>
+26-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:56:13-59:22
+27            <action android:name="android.intent.action.DIAL" />
+27-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:57:15-67
+27-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:57:23-64
+28
+29            <data android:scheme="tel" />
+29-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:53:15-46
+29-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:53:21-43
+30        </intent>
+31        <!-- If your sends SMS messages -->
+32        <intent>
+32-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:61:13-64:22
+33            <action android:name="android.intent.action.SENDTO" />
+33-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:62:15-69
+33-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:62:23-66
+34
+35            <data android:scheme="smsto" />
+35-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:53:15-46
+35-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:53:21-43
+36        </intent>
+37        <!-- If your app sends emails -->
+38        <intent>
+38-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:66:13-69:22
+39            <action android:name="android.intent.action.SEND" />
+39-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:67:15-67
+39-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:67:23-64
+40
+41            <data android:mimeType="*/*" />
+41-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:53:15-46
+41-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:68:21-43
+42        </intent>
+43    </queries>
+44
+45    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+45-->[:firebase_analytics] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:7:5-79
+45-->[:firebase_analytics] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:7:22-76
+46    <uses-permission android:name="android.permission.WAKE_LOCK" />
+46-->[:firebase_analytics] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:9:5-68
+46-->[:firebase_analytics] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:9:22-65
+47    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+47-->[:open_file] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/open_file/intermediates/library_manifest/release/AndroidManifest.xml:8:5-83
+47-->[:open_file] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/open_file/intermediates/library_manifest/release/AndroidManifest.xml:8:22-80
+48    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+48-->[:open_file] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/open_file/intermediates/library_manifest/release/AndroidManifest.xml:9:5-80
+48-->[:open_file] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/open_file/intermediates/library_manifest/release/AndroidManifest.xml:9:22-77
+49    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+49-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/0bed5d219761d1937f7d952dc6e548de/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:25:5-79
+49-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/0bed5d219761d1937f7d952dc6e548de/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:25:22-76
+50    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- package="com.example.onestore"> -->
+50-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:26:5-110
+50-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:26:22-107
+51    <application
+51-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:4:4-42:19
+52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+52-->[androidx.core:core:1.8.0] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/efbf645ac7f7a6288f6f3f3011a758fb/core-1.8.0/AndroidManifest.xml:24:18-86
+53        android:icon="@mipmap/ic_launcher"
+53-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:6:9-43
+54        android:label="jfill online" >
+54-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:5:9-37
+55        <activity
+55-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:7:9-35:20
+56            android:name="com.jfill.online.MainActivity"
+56-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:8:13-41
+57            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+57-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:11:13-163
+58            android:hardwareAccelerated="true"
+58-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:12:13-47
+59            android:launchMode="singleTop"
+59-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:9:13-43
+60            android:theme="@style/LaunchTheme"
+60-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:10:13-47
+61            android:windowSoftInputMode="adjustResize" >
+61-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:13:13-55
+62
+63            <!--
+64                 Specifies an Android theme to apply to this Activity as soon as
+65                 the Android process has started. This theme is visible to the user
+66                 while the Flutter UI initializes. After that, this theme continues
+67                 to determine the Window background behind the Flutter UI.
+68            -->
+69            <meta-data
+69-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:18:13-21:17
+70                android:name="io.flutter.embedding.android.NormalTheme"
+70-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:19:15-70
+71                android:resource="@style/NormalTheme" />
+71-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:20:15-52
+72            <!--
+73                 Displays an Android View that continues showing the launch screen
+74                 Drawable until Flutter paints its first frame, then this splash
+75                 screen fades out. A splash screen is useful to avoid any visual
+76                 gap between the end of Android's launch screen and the painting of
+77                 Flutter's first frame.
+78            -->
+79            <meta-data
+79-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:27:13-30:17
+80                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+80-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:28:15-79
+81                android:resource="@drawable/launch_background" />
+81-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:29:15-61
+82
+83            <intent-filter>
+83-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:31:13-34:29
+84                <action android:name="android.intent.action.MAIN" />
+84-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:32:17-68
+84-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:32:25-66
+85
+86                <category android:name="android.intent.category.LAUNCHER" />
+86-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:33:17-76
+86-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:33:27-74
+87            </intent-filter>
+88        </activity>
+89        <!--
+90             Don't delete the meta-data below.
+91             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+92        -->
+93        <meta-data
+93-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:38:9-40:33
+94            android:name="flutterEmbedding"
+94-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:39:13-44
+95            android:value="2" />
+95-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:40:13-30
+96
+97        <service
+97-->[:cloud_firestore] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
+98            android:name="com.google.firebase.components.ComponentDiscoveryService"
+98-->[:cloud_firestore] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:8:18-89
+99            android:directBootAware="true"
+99-->[com.google.firebase:firebase-common:20.1.2] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/086879fe8119a9449861b11c584c5a22/jetified-firebase-common-20.1.2/AndroidManifest.xml:35:13-43
+100            android:exported="false" >
+100-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:66:13-37
+101            <meta-data
+101-->[:cloud_firestore] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+102                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+102-->[:cloud_firestore] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:10:17-134
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[:cloud_firestore] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+104            <meta-data
+104-->[:firebase_analytics] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:13:13-15:85
+105                android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar"
+105-->[:firebase_analytics] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:14:17-127
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[:firebase_analytics] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:15:17-82
+107            <meta-data
+107-->[:firebase_auth] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+108                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+108-->[:firebase_auth] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[:firebase_auth] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+110            <meta-data
+110-->[:firebase_core] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+111                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+111-->[:firebase_core] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[:firebase_core] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:67:13-69:85
+114                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+114-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:68:17-109
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:69:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-firestore:24.3.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/ed0ffcebc71066b163b24ddc3f46ea1b/jetified-firebase-firestore-24.3.1/AndroidManifest.xml:20:13-22:85
+117                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+117-->[com.google.firebase:firebase-firestore:24.3.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/ed0ffcebc71066b163b24ddc3f46ea1b/jetified-firebase-firestore-24.3.1/AndroidManifest.xml:21:17-111
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-firestore:24.3.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/ed0ffcebc71066b163b24ddc3f46ea1b/jetified-firebase-firestore-24.3.1/AndroidManifest.xml:22:17-82
+119            <meta-data
+119-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/0bed5d219761d1937f7d952dc6e548de/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:31:13-33:85
+120                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+120-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/0bed5d219761d1937f7d952dc6e548de/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:32:17-139
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/0bed5d219761d1937f7d952dc6e548de/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:33:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-installations:17.0.3] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/6b27a4389187b6761cb55ad088223e8a/jetified-firebase-installations-17.0.3/AndroidManifest.xml:18:13-20:85
+123                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+123-->[com.google.firebase:firebase-installations:17.0.3] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/6b27a4389187b6761cb55ad088223e8a/jetified-firebase-installations-17.0.3/AndroidManifest.xml:19:17-127
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-installations:17.0.3] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/6b27a4389187b6761cb55ad088223e8a/jetified-firebase-installations-17.0.3/AndroidManifest.xml:20:17-82
+125        </service>
+126
+127        <provider
+127-->[:image_picker_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:8:9-16:20
+128            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+128-->[:image_picker_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:9:13-82
+129            android:authorities="com.jfill.onestore.flutter.image_provider"
+129-->[:image_picker_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:10:13-74
+130            android:exported="false"
+130-->[:image_picker_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-37
+131            android:grantUriPermissions="true" >
+131-->[:image_picker_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:12:13-47
+132            <meta-data
+132-->[:image_picker_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:13:13-15:75
+133                android:name="android.support.FILE_PROVIDER_PATHS"
+133-->[:image_picker_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:14:17-67
+134                android:resource="@xml/flutter_image_picker_file_paths" />
+134-->[:image_picker_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:15:17-72
+135        </provider>
+136
+137        <activity
+137-->[:url_launcher_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:74
+138            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+138-->[:url_launcher_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:9:13-74
+139            android:exported="false"
+139-->[:url_launcher_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:10:13-37
+140            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+140-->[:url_launcher_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-71
+141
+142        <provider
+142-->[:open_file] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/open_file/intermediates/library_manifest/release/AndroidManifest.xml:12:9-21:20
+143            android:name="com.crazecoder.openfile.FileProvider"
+143-->[:open_file] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/open_file/intermediates/library_manifest/release/AndroidManifest.xml:13:13-64
+144            android:authorities="com.jfill.onestore.fileProvider.com.crazecoder.openfile"
+144-->[:open_file] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/open_file/intermediates/library_manifest/release/AndroidManifest.xml:14:13-88
+145            android:exported="false"
+145-->[:open_file] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/open_file/intermediates/library_manifest/release/AndroidManifest.xml:15:13-37
+146            android:grantUriPermissions="true" >
+146-->[:open_file] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/open_file/intermediates/library_manifest/release/AndroidManifest.xml:16:13-47
+147            <meta-data
+147-->[:image_picker_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:13:13-15:75
+148                android:name="android.support.FILE_PROVIDER_PATHS"
+148-->[:image_picker_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:14:17-67
+149                android:resource="@xml/filepaths" />
+149-->[:image_picker_android] /Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:15:17-72
+150        </provider>
+151
+152        <activity
+152-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:27:9-44:20
+153            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+153-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:28:13-80
+154            android:excludeFromRecents="true"
+154-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:29:13-46
+155            android:exported="true"
+155-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:30:13-36
+156            android:launchMode="singleTask"
+156-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:31:13-44
+157            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+157-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:32:13-72
+158            <intent-filter>
+158-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:33:13-43:29
+159                <action android:name="android.intent.action.VIEW" />
+159-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:52:15-67
+159-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:52:23-64
+160
+161                <category android:name="android.intent.category.DEFAULT" />
+161-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:36:17-76
+161-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:36:27-73
+162                <category android:name="android.intent.category.BROWSABLE" />
+162-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:37:17-78
+162-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:37:27-75
+163
+164                <data
+164-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:53:15-46
+165                    android:host="firebase.auth"
+166                    android:path="/"
+167                    android:scheme="genericidp" />
+167-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:53:21-43
+168            </intent-filter>
+169        </activity>
+170        <activity
+170-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:45:9-62:20
+171            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+171-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:46:13-79
+172            android:excludeFromRecents="true"
+172-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:47:13-46
+173            android:exported="true"
+173-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:48:13-36
+174            android:launchMode="singleTask"
+174-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:49:13-44
+175            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+175-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:50:13-72
+176            <intent-filter>
+176-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:51:13-61:29
+177                <action android:name="android.intent.action.VIEW" />
+177-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:52:15-67
+177-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:52:23-64
+178
+179                <category android:name="android.intent.category.DEFAULT" />
+179-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:36:17-76
+179-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:36:27-73
+180                <category android:name="android.intent.category.BROWSABLE" />
+180-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:37:17-78
+180-->[com.google.firebase:firebase-auth:21.0.8] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/8e266734444686e8ee01d5def7f72073/jetified-firebase-auth-21.0.8/AndroidManifest.xml:37:27-75
+181
+182                <data
+182-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:53:15-46
+183                    android:host="firebase.auth"
+184                    android:path="/"
+185                    android:scheme="recaptcha" />
+185-->/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/android/app/src/main/AndroidManifest.xml:53:21-43
+186            </intent-filter>
+187        </activity>
+188
+189        <provider
+189-->[com.google.firebase:firebase-common:20.1.2] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/086879fe8119a9449861b11c584c5a22/jetified-firebase-common-20.1.2/AndroidManifest.xml:26:9-31:39
+190            android:name="com.google.firebase.provider.FirebaseInitProvider"
+190-->[com.google.firebase:firebase-common:20.1.2] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/086879fe8119a9449861b11c584c5a22/jetified-firebase-common-20.1.2/AndroidManifest.xml:27:13-77
+191            android:authorities="com.jfill.onestore.firebaseinitprovider"
+191-->[com.google.firebase:firebase-common:20.1.2] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/086879fe8119a9449861b11c584c5a22/jetified-firebase-common-20.1.2/AndroidManifest.xml:28:13-72
+192            android:directBootAware="true"
+192-->[com.google.firebase:firebase-common:20.1.2] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/086879fe8119a9449861b11c584c5a22/jetified-firebase-common-20.1.2/AndroidManifest.xml:29:13-43
+193            android:exported="false"
+193-->[com.google.firebase:firebase-common:20.1.2] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/086879fe8119a9449861b11c584c5a22/jetified-firebase-common-20.1.2/AndroidManifest.xml:30:13-37
+194            android:initOrder="100" />
+194-->[com.google.firebase:firebase-common:20.1.2] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/086879fe8119a9449861b11c584c5a22/jetified-firebase-common-20.1.2/AndroidManifest.xml:31:13-36
+195
+196        <receiver
+196-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:29:9-33:20
+197            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+197-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:30:13-85
+198            android:enabled="true"
+198-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:31:13-35
+199            android:exported="false" >
+199-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:32:13-37
+200        </receiver>
+201
+202        <service
+202-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:35:9-38:40
+203            android:name="com.google.android.gms.measurement.AppMeasurementService"
+203-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:36:13-84
+204            android:enabled="true"
+204-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:37:13-35
+205            android:exported="false" />
+205-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:38:13-37
+206        <service
+206-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:39:9-43:72
+207            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+207-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:40:13-87
+208            android:enabled="true"
+208-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:41:13-35
+209            android:exported="false"
+209-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:42:13-37
+210            android:permission="android.permission.BIND_JOB_SERVICE" />
+210-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/2e4c7ca2d49a40988e43cef2bf3ae30f/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:43:13-69
+211
+212        <activity
+212-->[com.google.android.gms:play-services-base:18.0.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/cc67751070ba8f7377d63ab76544c726/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+213            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+213-->[com.google.android.gms:play-services-base:18.0.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/cc67751070ba8f7377d63ab76544c726/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+214            android:exported="false"
+214-->[com.google.android.gms:play-services-base:18.0.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/cc67751070ba8f7377d63ab76544c726/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+215            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+215-->[com.google.android.gms:play-services-base:18.0.1] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/cc67751070ba8f7377d63ab76544c726/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+216
+217        <meta-data
+217-->[com.google.android.gms:play-services-basement:18.1.0] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/371e697bd847b8f0299b1a4e3e0b40ec/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+218            android:name="com.google.android.gms.version"
+218-->[com.google.android.gms:play-services-basement:18.1.0] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/371e697bd847b8f0299b1a4e3e0b40ec/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+219            android:value="@integer/google_play_services_version" />
+219-->[com.google.android.gms:play-services-basement:18.1.0] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/371e697bd847b8f0299b1a4e3e0b40ec/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+220
+221        <uses-library
+221-->[androidx.window:window:1.0.0-beta04] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/5d93ab2f2812dcc02a149cabf48676c0/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+222            android:name="androidx.window.extensions"
+222-->[androidx.window:window:1.0.0-beta04] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/5d93ab2f2812dcc02a149cabf48676c0/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+223            android:required="false" />
+223-->[androidx.window:window:1.0.0-beta04] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/5d93ab2f2812dcc02a149cabf48676c0/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+224        <uses-library
+224-->[androidx.window:window:1.0.0-beta04] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/5d93ab2f2812dcc02a149cabf48676c0/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+225            android:name="androidx.window.sidecar"
+225-->[androidx.window:window:1.0.0-beta04] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/5d93ab2f2812dcc02a149cabf48676c0/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+226            android:required="false" />
+226-->[androidx.window:window:1.0.0-beta04] /Users/soubinkittiphanh/.gradle/caches/transforms-2/files-2.1/5d93ab2f2812dcc02a149cabf48676c0/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+227    </application>
+228
+229</manifest>

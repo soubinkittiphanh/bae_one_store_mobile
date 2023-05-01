@@ -1,0 +1,2 @@
+com/peoplewareinnovations/bluetooth_thermal_printer/BuildConfig.java
+ com.peoplewareinnovations.bluetooth_thermal_printer.BuildConfig

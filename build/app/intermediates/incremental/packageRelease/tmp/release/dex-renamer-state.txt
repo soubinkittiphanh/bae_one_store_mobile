@@ -1,0 +1,4 @@
+#Sun Apr 30 12:58:32 ICT 2023
+base.0=/Users/soubinkittiphanh/Desktop/Pro/flutter app/onestore_bae/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
