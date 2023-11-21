@@ -1,0 +1,30 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.boskokg.flutter_blue_plus" >
+4
+5    <uses-sdk android:minSdkVersion="19" />
+5-->/Users/soubinkittiphanh/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.5.2/android/src/main/AndroidManifest.xml
+6
+7    <!--
+8         New Bluetooth permissions in Android 12
+9           https://developer.android.com/about/versions/12/features/bluetooth-permissions
+10    -->
+11    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+11-->/Users/soubinkittiphanh/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.5.2/android/src/main/AndroidManifest.xml:7:5-73
+11-->/Users/soubinkittiphanh/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.5.2/android/src/main/AndroidManifest.xml:7:22-70
+12    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+12-->/Users/soubinkittiphanh/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.5.2/android/src/main/AndroidManifest.xml:8:5-76
+12-->/Users/soubinkittiphanh/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.5.2/android/src/main/AndroidManifest.xml:8:22-73
+13
+14    <!-- Request legacy Bluetooth permissions on older devices. -->
+15    <uses-permission android:name="android.permission.BLUETOOTH" />
+15-->/Users/soubinkittiphanh/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.5.2/android/src/main/AndroidManifest.xml:11:5-68
+15-->/Users/soubinkittiphanh/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.5.2/android/src/main/AndroidManifest.xml:11:22-65
+16    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+16-->/Users/soubinkittiphanh/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.5.2/android/src/main/AndroidManifest.xml:12:5-74
+16-->/Users/soubinkittiphanh/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.5.2/android/src/main/AndroidManifest.xml:12:22-71
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->/Users/soubinkittiphanh/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.5.2/android/src/main/AndroidManifest.xml:13:5-79
+17-->/Users/soubinkittiphanh/.pub-cache/hosted/pub.dev/flutter_blue_plus-1.5.2/android/src/main/AndroidManifest.xml:13:22-76
+18
+19</manifest>
